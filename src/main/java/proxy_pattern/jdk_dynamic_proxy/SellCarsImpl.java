@@ -1,4 +1,4 @@
-package proxy_pattern.dynamic_proxy;
+package proxy_pattern.jdk_dynamic_proxy;
 
 public class SellCarsImpl implements SellCars {
     @Override

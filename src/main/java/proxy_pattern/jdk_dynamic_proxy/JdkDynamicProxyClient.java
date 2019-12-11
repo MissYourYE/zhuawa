@@ -1,16 +1,16 @@
-package proxy_pattern.dynamic_proxy;
+package proxy_pattern.jdk_dynamic_proxy;
 
 import proxy_pattern.static_proxy.SellAirJordan;
 import proxy_pattern.static_proxy.SellShoes;
 
-public class DynamicProxyClient {
+public class JdkDynamicProxyClient {
 
     public static void main(String[] args) {
-        DynamicProxySellHandler dynamicProxySellHandler = new DynamicProxySellHandler();
+        JdkDynamicProxySellHandler dynamicProxySellHandler = new JdkDynamicProxySellHandler();
         SellShoes sellShoes = (SellShoes) dynamicProxySellHandler.newDynamicProxySellInstance(new SellAirJordan());
         sellShoes.sellAj1();
         System.out.println("=================");
-        DynamicProxySellHandler dynamicProxySellHandler1 = new DynamicProxySellHandler();
+        JdkDynamicProxySellHandler dynamicProxySellHandler1 = new JdkDynamicProxySellHandler();
         SellCars sellCars = (SellCars)dynamicProxySellHandler1.newDynamicProxySellInstance(new SellCarsImpl());
         sellCars.sellAodi();
     }
