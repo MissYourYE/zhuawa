@@ -1,12 +1,16 @@
 package simple_factory_pattern;
 
+import java.util.ArrayList;
+import java.util.function.DoubleToIntFunction;
+
 public class Customer {
 
     public static void main(String[] args) {
-        PhoneFactory phoneFactory = new PhoneFactory();
+
         //生产==》HuaweiMate9
         //生产==》HuaweiMate10
-        AbstractHuaweiPhone huaweiMate9 = phoneFactory.createHuaweiPhone(9);
-        AbstractHuaweiPhone huaweiMate10 = phoneFactory.createHuaweiPhone(10);
+        AbstractHuaweiPhone huaweiMate9 = PhoneFactory.createHuaweiPhone(9);
+        AbstractHuaweiPhone huaweiMate10 = PhoneFactory.createHuaweiPhone(10);
+        ArrayList<String> strings = new ArrayList<>();
     }
 }

@@ -14,7 +14,7 @@ package simple_factory_pattern;
  */
 public class PhoneFactory {
 
-    public AbstractHuaweiPhone createHuaweiPhone(int type) {
+    public static AbstractHuaweiPhone createHuaweiPhone(int type) {
         switch (type) {
             case 9:
                 return new HuaweiMate9();
@@ -26,4 +26,10 @@ public class PhoneFactory {
         }
         return null;
     }
+}
+
+class PhoneFa extends PhoneFactory{
+
+
+
 }

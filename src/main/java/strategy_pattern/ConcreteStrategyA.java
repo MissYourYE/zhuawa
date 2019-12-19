@@ -7,6 +7,7 @@ package strategy_pattern;
  */
 public class ConcreteStrategyA implements Strategy {
 
+    @Override
     public void algorithmLogic() {
         System.out.println("A算法");
     }

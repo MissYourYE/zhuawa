@@ -7,6 +7,8 @@ package factory_method_pattern;
  * @author dubaoming
  */
 public class HuaweiMate10Factory implements PhoneFactory {
+
+    @Override
     public AbstractHuaweiPhone createHuaweiPhone() {
         return new HuaweiMate10();
     }
