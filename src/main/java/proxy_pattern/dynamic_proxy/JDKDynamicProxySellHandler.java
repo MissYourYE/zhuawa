@@ -11,7 +11,7 @@ import java.lang.reflect.Proxy;
  *
  * 优点：使我们的代码职责更加单一，复用性更强。
  */
-public class DynamicProxySellHandler implements InvocationHandler {
+public class JDKDynamicProxySellHandler implements InvocationHandler {
 
     private Object entrustObj;
 
